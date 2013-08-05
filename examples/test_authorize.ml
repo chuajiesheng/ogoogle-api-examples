@@ -10,3 +10,8 @@ let _ = m##client_id <- client_id
 let _ = m##immediate <- Js._true
 let _ = m##response_type <- response_type
 let _ = m##scope <- scope
+
+let login_completed (t : Token.oauth_token) =
+  ignore(Js._true)
+
+let _ = Auth.authorize m (Js.wrap_callback login_completed)
