@@ -1,10 +1,17 @@
 SRC=$(wildcard *.ml)
-LIB=-package js_of_ocaml,js_of_ocaml.syntax,lwt,ogoogle-api
+TARGETS=$(SRC:.ml=.js)
+REQS=$(SRC:.ml=.js)
+LIB=-package js_of_ocaml -package js_of_ocaml.syntax -package lwt -package ogoogle-api
 SYNTAX=-syntax camlp4o
 OCAMLLFLAGS=
 
-all:
-	ocamlfind ocamlc -annot -c $(LIB) $(SYNTAX) $(SRC)
+all: $(TARGETS) $(REQS)
+
+%.byte: %.ml
+	ocamlfind ocamlc -annot -linkpkg $(LIB) $(SYNTAX) -o $@ $^
+
+%.js: %.byte
+	js_of_ocaml $^ -pretty
 
 clean:
 	rm -f *.cm[ioax] *.cmxa *.cmxs *.o *.a *.annot
