@@ -37,3 +37,4 @@ _build
 _deps
 META
 .depend
+*.js
