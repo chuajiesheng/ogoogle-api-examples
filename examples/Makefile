@@ -14,5 +14,5 @@ all: $(TARGETS) $(REQS)
 	js_of_ocaml $^ -pretty
 
 clean:
-	rm -f *.cm[ioax] *.cmxa *.cmxs *.o *.a *.annot
+	rm -f *.cm[ioax] *.cmxa *.cmxs *.o *.a *.annot *.js
 	rm -f *.type_mli
