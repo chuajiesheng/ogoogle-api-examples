@@ -1,4 +1,4 @@
-let client_id = Js.string "837050751313"
+let client_id = Js.string "111026527826"
 let immediate = Js._false
 let response_type = Js.string "token"
 let scope_a = [| Js.string "https://www.googleapis.com/auth/plus.me" |]
