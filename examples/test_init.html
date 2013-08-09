@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Test Init</title>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="test_init.js"></script>
+  </head>
+  <body>
+    <p>
+      This page demonstrate <code>gapi.auth.init(callback)</code>
+    </p>
+    <p>
+      Initializes the authorization feature.
+      Call this when the client loads to prevent popup blockers from blocking
+      the auth window on <code>gapi.auth.authorize calls</code>.
+    </p>
+    <p>
+      See console for result.
+    </p>
+    <p>
+      Note: In order for the Oauth to work, pop-up block must be off.
+    </p>
+    <p>
+      If the authentication pop-up is delay
+      (i.e. pop-up detected, user click on the link manually),
+      the authentication would not work!
+    </p>
+  </body>
+</html>
