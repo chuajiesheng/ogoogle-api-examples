@@ -5,10 +5,26 @@
     <script src="test_authorize.js"></script>
   </head>
   <body>
-    Note: In order for the Oauth to work, pop-up block must be off.
-    <br />
-    If the authentication pop-up is delay
-    (i.e. pop-up detected, user click on the link manually),
-    the authentication would not work!
+    <p>
+      This page demonstrate <code>gapi.auth.authorize(params, callback)</code>
+    </p>
+    <p>
+      Initiates the OAuth 2.0 authorization process.
+      The browser displays a popup window prompting the user authenticate
+      and authorize.
+      After the user authorizes,
+      the popup closes and the callback function fires.
+    </p>
+    <p>
+      See console for result.
+    </p>
+    <p>
+      Note: In order for the Oauth to work, pop-up block must be off.
+    </p>
+    <p>
+      If the authentication pop-up is delay
+      (i.e. pop-up detected, user click on the link manually),
+      the authentication would not work!
+    </p>
   </body>
 </html>
