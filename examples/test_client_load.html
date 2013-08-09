@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Test Client Load</title>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="test_client_load.js"></script>
+  </head>
+  <body>
+    <p>
+      This page demonstrate <code>gapi.client.load(name, version, callback)</code>
+    </p>
+    <p>
+      Loads the client library interface to a particular API.
+      The new API interface will be in the form
+      <code>gapi.client.api.collection.method</code>.
+      For example, the Moderator API would create methods like
+      <code>gapi.client.moderator.series.list</code>.
+      Coming soon: per-API documentation.
+    </p>
+    <p>
+      See console for result.
+    </p>
+    <p>
+      Note: In order for the Oauth to work, pop-up block must be off.
+    </p>
+    <p>
+      If the authentication pop-up is delay
+      (i.e. pop-up detected, user click on the link manually),
+      the authentication would not work!
+    </p>
+  </body>
+</html>
