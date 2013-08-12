@@ -11,6 +11,7 @@ let _ = m##scope_ <- scope
 let process_api_response resp =
   (* the request callback to this function, supplying the resp *)
   Firebug.console##log(Js.string "process api request response");
+  Firebug.console##log_2(Js.string "[id]", resp##id);
   Firebug.console##log_2(Js.string "[display name]", resp##displayName);
   ignore(Js._true)
 
