@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Test Client RPC Request</title>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="test_client_rpc_request.js"></script>
+  </head>
+  <body>
+    <p>
+      This page demonstrate
+      <code>gapi.client.request(args)</code> and
+      <code>gapi.client.HttpRequest</code> object
+    </p>
+    <p>
+      Creates a HTTP request for making RESTful requests.
+    </p>
+    <p>
+      It return <code>gapi.client.HttpRequest</code>, an object encapsulating
+      an HTTP request. <code>gapi.client.HttpRequest</code> is not instantiated
+      directly, rather it is returned by gapi.client.request.
+    </p>
+    <p>
+      <code>gapi.client.HttpRequest</code> defines one method:
+      <code>gapi.client.HttpRequest.execute(callback)</code>
+    </p>
+    <p>
+      Executes the request and runs the supplied callback on response.
+    </p>
+    <p>
+      See console for result.
+    </p>
+    <p>
+      Note: In order for the Oauth to work, pop-up block must be off.
+    </p>
+    <p>
+      If the authentication pop-up is delay
+      (i.e. pop-up detected, user click on the link manually),
+      the authentication would not work!
+    </p>
+  </body>
+</html>
