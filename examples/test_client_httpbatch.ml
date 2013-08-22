@@ -41,9 +41,9 @@ let login_completed (t : Token.oauth_token Js.t) =
   let req = Client.request r in
   let req2 = Client.request r2 in
   let batch = Client.new_http_batch () in
-  let _ = batch##add (req, opt_params) in
-  let _ = batch##add (req2, opt_params) in
-  let _ = batch##execute (Js.wrap_callback callback) in
+  let _ = batch##add_ (req, opt_params) in
+  let _ = batch##add_ (req2, opt_params) in
+  let _ = batch##execute_ (Js.wrap_callback callback) in
   ()
 
 let start _ =
