@@ -1,5 +1,6 @@
 let client_id = Js.string "111026527826-0de029u61m99jcpcvrfqhakepuhbp5m0"
-let api_key = Js.string "J4U3X4-OG82gTOrMr5zPJBb7"
+let api_key = Js.string "AIzaSyAbB4Mr1ilCJX8MFZKc2qXeY5AIJTXEOo0"
+
 let scope_a = [| Js.string "https://www.googleapis.com/auth/plus.me" |]
 let scope = Js.array scope_a
 
